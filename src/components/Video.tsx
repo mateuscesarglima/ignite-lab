@@ -1,4 +1,5 @@
 import Button from "./button/Button";
+import Card from "./videoSectionCard/Card";
 
 const Video = () => {
   return (
@@ -47,7 +48,21 @@ const Video = () => {
           </div>
         </div>
 
-        <div></div>
+        <div className="gap-8 mt-20 grid grid-cols-2 ">
+
+          <Card
+            title="Material complementar"
+            content="Acesse o material complementar para acelerar o seu
+            desenvolvimento"
+            iconType="FileArrowDown"
+          />
+          <Card
+            title="Wallpapers exclusivos"
+            content="Baixe wallpapers exclusivos do Ignite Lab e personalize a sua máquina"
+            iconType="ImageSquare"
+          />
+
+        </div>
       </div>
     </div>
   );

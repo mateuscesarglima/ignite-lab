@@ -1,7 +1,7 @@
 import { DiscordLogo, Lightning } from "phosphor-react";
 
 interface ButtonType {
-  typeButton: string;
+  typeButton: 'primary' | 'secondary' | 'tertiary';
 }
 
 const Button = (props: ButtonType) => {
