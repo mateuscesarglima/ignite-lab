@@ -1,18 +1,7 @@
 import { gql, useQuery } from "@apollo/client";
+import { GET_LESSONS_QUERY } from "../Query";
 import Lesson from "./Lesson";
 
-const GET_LESSONS_QUERY = gql`
-  query {
-    lessons(orderBy: availableAt_ASC, stage: PUBLISHED) {
-      id
-      lessonType
-      availableAt
-      title
-      slug
-    }
-  }
-`;
-//Tipagem para informada qual o retorno da query acima
 interface getLessonsQueryResponse {
   lessons: {
     id: string;
