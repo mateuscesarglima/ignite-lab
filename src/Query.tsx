@@ -26,3 +26,11 @@ export const GET_LESSONS_QUERY = gql`
     }
   }
 `;
+
+export const CREATE_SUBSCRIBER_MUTATION = gql`
+  mutation CreateSubscriber($name: String!, $email: String!) {
+    createSubscriber(data: { name: $name, email: $email }) {
+      id
+    }
+  }
+`;
