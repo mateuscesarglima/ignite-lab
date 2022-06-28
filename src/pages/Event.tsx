@@ -3,11 +3,9 @@ import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 import Video from "../components/Video";
 
-interface Params {
-  slug: string;
-}
 
-const Event = (props: Params) => {
+const Event = () => {
+  
   const { slug } = useParams<{ slug: string }>();
 
   return (

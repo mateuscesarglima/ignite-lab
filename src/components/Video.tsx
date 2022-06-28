@@ -4,10 +4,7 @@ import { GET_LESSON_BY_SLUG_QUERY } from "../Query";
 import "@vime/core/themes/default.css";
 import Button from "./button/Button";
 import Card from "./videoSectionCard/Card";
-
-
-
-
+ 
 interface GetLessonBySlugResponse {
   lesson: {
     title: string;
@@ -20,7 +17,6 @@ interface GetLessonBySlugResponse {
     }
   }
 }
-
 interface VideoProps {
   lessonSlug: string;
 }
